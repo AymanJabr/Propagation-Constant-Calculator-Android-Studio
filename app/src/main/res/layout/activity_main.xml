@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@android:color/black"
+    android:layout_height="fill_parent">
+    <!-- Here you put the rest of your current view-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:background="@color/grayish"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:text="ω = "/>
+            <EditText
+                android:id="@+id/omegaTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:background="@color/grayish"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:text="σ = "/>
+            <EditText
+                android:id="@+id/sigmaTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:background="@color/grayish"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:text="ε = "/>
+            <EditText
+                android:id="@+id/epsilonTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:background="@color/grayish"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:text="μ = "/>
+            <EditText
+                android:id="@+id/muTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="( jω √(μ( ε - jσ/ω))) "
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/solveBtn"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Solve"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/solutionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solution: "
+            android:textSize="40sp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="textStart"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalSolution"
+            android:text="A + Bj"
+            android:inputType="textMultiLine"
+            android:visibility="gone"
+            android:textSize="50sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/showStepsBtn"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Show steps"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
